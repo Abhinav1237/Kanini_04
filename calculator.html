@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="icon" type="image/calciicon" href="calculator.jpeg">
+
+    <script>
+
+function calculate() {
+      var a = parseFloat(document.getElementById("a").value);
+      var b = parseFloat(document.getElementById("b").value);
+      var operator = document.getElementById("opera").value;
+      var result;
+      switch (operator) {
+        case "addition":
+          result = a + b;
+          break;
+        case "subtraction":
+          result = a - b;
+          break;
+        case "multiplication":
+          result = a * b;
+          break;
+        case "division":
+          result = a / b;
+          break;
+      }
+      document.getElementById("result").value = result;
+    }
+
+    function clear(){
+
+        document.getElementById('result').value = '';
+    }
+
+    </script>\
+</head>
+<body>
+  <center>
+   <fieldset>
+    <legend>Calculator</legend>
+    <img src="img/calculator.jpeg" alt="Calculator" height="300px" width="400px">
+    <form name="calci" action="">
+
+        <label for="a">a:</label>
+        <input type="text" id="a" value=""><br>
+        <br><label for="b">b:</label>
+        <input type="text" id="b" value=""><br>
+        
+        <br><label for="opera">Operation:</label>
+        <select name="opera" id="opera">
+          <option value="addition">addition</option>
+          <option value="subtraction">subtraction</option>
+          <option value="multiplication">multiplication</option>
+          <option value="division">division</option>
+        </select><br>
+
+        <br><label for="result">Output:</label>
+        <input type="text" id="result" value=""><br>
+
+    </form>
+   
+    <br>
+    <table>
+        <th align ="center">
+            <td> <button type="button" onclick="clear();"><img src="img/reset.jpeg" alt="reset" height="80px"></button></td>
+            <td><button type="button" onclick="calculate();"><img src="img/submit.jpeg" alt="submit" height="80px" width="80px" ></button></td>
+        </th>
+    </table>
+    
+   </fieldset>
+  </center> 
+</body>
+</html>
