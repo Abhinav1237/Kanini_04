@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 90%;
+            max-width: 900px;
+            margin: 2em auto;
+            font: .9em/1.2 Arial, Helvetica, sans-serif;
+            text-decoration-color:;
+        }
+
+        .container {
+            grid-template-columns: 13;
+            display:grid;
+        }
+
+        header{
+            background-color:blue;
+            grid-column: 1/13 ;
+            grid-row: 1;
+            color: aliceblue;
+    
+        }
+        footer {
+            border-radius: 5px;
+            padding: 10px;
+            background-color: blue;
+            border: 2px solid rgb(79, 185, 227);
+            grid-column: 1/13;
+            grid-row: 3;
+            color: aliceblue;
+        }
+
+        aside {
+            float:left;
+            grid-row: 2;
+        }
+        article{
+            font-size: large;
+            float:right;
+            grid-row: 2;
+            grid-column:8/13;
+            margin: 40px;
+            margin-top: 10px;
+            
+            
+        }
+        #qq{
+            background-color: darkturquoise;
+            color:white;
+            border-radius: 20px;
+        }
+        #qq:hover{
+            background-color:white;
+        }
+    </style>
+</head>
+<body> 
+    <div class="container">
+        <header><h1>Kanini</h1></header>
+        <article>
+            <h1>About</h1>
+            <p>Kanini is one of the best software development division serving the various applications and service providers.You will learn more about float layout during this training</p>
+        </article>
+        <aside>
+            <ul id="qq">About</ul>
+            <ul id="qq">Services</ul>
+            <ul id="qq">Careers</ul>
+            <ul id="qq">Contact</ul>
+        </aside>
+        <footer>&#169 Copyrights reserved</footer>
+    </div>
+
+    
+    
+</body>
+</html>
